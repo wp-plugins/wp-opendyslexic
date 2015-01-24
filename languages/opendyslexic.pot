@@ -1,0 +1,45 @@
+# Copyright (C) 2015 WP-OpenDyslexic
+# This file is distributed under the same license as the WP-OpenDyslexic package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-OpenDyslexic 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/wp-opendyslexic\n"
+"POT-Creation-Date: 2015-01-23 15:39:21+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: index.php:51
+msgid "Opendyslexic font"
+msgstr ""
+
+#: index.php:52
+msgid ""
+"You can use the OpenDyslexic font on the website or on both the website and "
+"the admin. The OpenDyslexic font is designed to help people with dyslexia "
+"with their reading. "
+msgstr ""
+
+#: index.php:58
+msgid "Don't use the OpenDyslexic font"
+msgstr ""
+
+#: index.php:59
+msgid "Use both on the website and in the admin"
+msgstr ""
+
+#: index.php:60
+msgid "Only use on the website"
+msgstr ""
+
+#: index.php:61
+msgid "Only use within the admin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Allows registered users to enable the OpenDyslexic font in their profile."
+msgstr ""
