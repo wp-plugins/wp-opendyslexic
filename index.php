@@ -33,17 +33,26 @@ Changelog:
 */
 ?>
 <?php
+/*
+/ Function to add the i18n
+*/
 function load_opendyslexic_textdomain() {
   load_plugin_textdomain( 'opendyslexic', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
 }
  
+/*
+/ Adding all the Wordpress hooks
+*/
 add_action('plugins_loaded', 'load_opendyslexic_textdomain' );
 add_action('profile_personal_options', 'add_opendyslexic_option_to_profile');
-add_action('edit_user_profile_update', 'update_profile_use_opendyslexic'); //deze lijkt niet te werken
+add_action('edit_user_profile_update', 'update_profile_use_opendyslexic');
 add_action('personal_options_update', 'update_profile_use_opendyslexic');
 add_action('wp_head','add_opendyslexic_css');
 add_action('admin_head', 'add_opendyslexic_css_admin');
 
+/*
+/ Function to add the WP-OpenDyslexic choice setting to the user profile page in the WP admin
+*/
 function add_opendyslexic_option_to_profile( $user ) {
     ?>
         <table class="form-table">
@@ -66,12 +75,18 @@ function add_opendyslexic_option_to_profile( $user ) {
     <?php
 }
 
+/*
+/ Function to save the WP-OpenDyslexic setting to the database
+*/
 
 function update_profile_use_opendyslexic($user_id) {
      if ( current_user_can('edit_user',$user_id) )
          update_usermeta($user_id, 'use_opendyslexic', $_POST['use_opendyslexic']);
 }
 
+/*
+/ Function to add the OpenDyslexic CSS to the website if user has this enabled
+*/
 function add_opendyslexic_css()
 {
 $user_ID = get_current_user_id(); 
@@ -86,6 +101,9 @@ if ($use_opendyslexic=="yes_everywhere" || $use_opendyslexic=="yes_websiteonly")
 }
 }
 
+/*
+/ Function to add the OpenDyslexic CSS to the admin if user has this enabled
+*/
 function add_opendyslexic_css_admin()
 {
 $user_ID = get_current_user_id(); 
@@ -98,6 +116,5 @@ if ($use_opendyslexic=="yes_everywhere" || $use_opendyslexic=="yes_adminonly"){
 </style>
 <?php
 }
-
 }
 ?>
