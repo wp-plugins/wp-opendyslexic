@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: 120w
 Donate link: https://frankleonard.nl/wp-opendyslexic/
-Tags: dyslexia, font, admin
+Tags: dyslexia, font, admin, reading, opendyslexic
 Requires at least: 3.0.1
 Tested up to: 4.1
 Stable tag: trunk
