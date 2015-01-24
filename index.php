@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP-OpenDyslexic
-Plugin URI: https://frankleonard.nl/
+Plugin URI: https://frankleonard.nl/wp-opendyslexic/
 Description: Allows registered users to enable the OpenDyslexic font in their profile.
 Version: 1.0
 Author: Frank Gerritse
