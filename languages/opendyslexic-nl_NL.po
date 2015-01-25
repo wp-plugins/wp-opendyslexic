@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the OpenDyslexic Font for users package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP-OpenDyslexic1.0\n"
+"Project-Id-Version: WP-OpenDyslexic 1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/wp-opendyslexic\n"
 "POT-Creation-Date: 2015-01-23 15:08:03+00:00\n"
 "MIME-Version: 1.0\n"
